@@ -1,105 +1,106 @@
-const fs = require('fs');
-const path = require('path');
-const weatherService = require('../services/weatherService');
 const geocodeService = require('../services/geocodeService');
-
-// chemin vers data/moods.json (plus robuste : process.cwd() = racine du projet)
-const moodsFile = path.join(process.cwd(), 'data', 'moods.json');
-
-/**
- * computeMoodScore
- * Calcule un score simple à partir de la note et des infos météo.
- */
-function computeMoodScore(rating, weatherData) {
-  if (rating === undefined || rating === null) rating = 0;
-  let weatherScore = 0;
-  const weatherDesc = (weatherData && (weatherData.weather || weatherData.description || '')).toString().toLowerCase();
-  if (weatherDesc.includes('rain')) weatherScore = -1;
-  else if (weatherDesc.includes('sun') || weatherDesc.includes('clear')) weatherScore = 1;
-  return rating + weatherScore;
-}
+const weatherService = require('../services/weatherService');
+const jsonStore = require('../storage/jsonStore');
+const { computeScoreWithBreakdown } = require('../utils/moodScore');
+const { analyzeText } = require('../utils/textAnalyzer');
 
 /**
  * addMood
- * Accepts a POST body with:
- *  - text (string), rating (number)
- *  - either lat+lon (numbers) OR address (string)
+ * - Validatation des données
+ * - R2cupération des coordinations ou adresse
+ * - Récupérer la météo selon les coord 
+ * - Calculer le mood score via utils/moodScore par rapport aux données
+ * - Sauvegarder dans data/mood.json via storage/jsonStore
+ *
+ * Accepted body:
+ *  { text, rating, lat, lon, address, imageUrl? }
  */
 async function addMood(req, res) {
   try {
-    const { text, rating, lat, lon, address } = req.body;
+    const { text = '', rating, lat, lon, address, imageUrl } = req.body;
 
-    // Validation simple et claire :
-    if (!text) return res.status(400).json({ error: 'text is required' });
-    if (rating === undefined || rating === null) return res.status(400).json({ error: 'rating is required' });
+    // Validation basique mais explicite
+    if (typeof text !== 'string' || text.trim() === '') {
+      return res.status(400).json({ error: 'text is required and must be a non-empty string' });
+    }
+    if (rating === undefined || rating === null || isNaN(Number(rating))) {
+      return res.status(400).json({ error: 'rating is required and must be a number (1-5 recommended)' });
+    }
 
-    // Vérifier qu'on a soit lat+lon soit address
-    const hasCoords = (lat !== undefined && lon !== undefined && lat !== null && lon !== null);
-    const hasAddress = (typeof address === 'string' && address.trim().length > 0);
+    // Normaliser le rating en nombre
+    let numericRating = Number(rating);
 
+    // S'assurer qu'on a des coordonnées ou une adresse
+    const hasCoords = lat !== undefined && lon !== undefined && lat !== null && lon !== null;
+    const hasAddress = typeof address === 'string' && address.trim() !== '';
     if (!hasCoords && !hasAddress) {
       return res.status(400).json({ error: 'Provide either lat+lon or address' });
     }
 
-    // === Géocodage ===
+    // Décortiquer et initialiser les coords, l'adresse
+    let usedLat = hasCoords ? Number(lat) : null;
+    let usedLon = hasCoords ? Number(lon) : null;
     let place = null;
-    let usedLat = lat;
-    let usedLon = lon;
 
     if (hasCoords) {
-      // On a des coordonnées → reverse geocode
-      place = await geocodeService.reverseGeocode(usedLat, usedLon);
+      // Reverse geocode : pour récupérer l'adresse exacte depuis les coords
+      try {
+        place = await geocodeService.reverseGeocode(usedLat, usedLon);
+      } catch (err) {
+        console.warn('reverseGeocode failed:', err.message || err);
+      }
     } else {
-      // On a une adresse → forward geocode pour obtenir lat/lon
-      const f = await geocodeService.forwardGeocode(address);
-      // Nominatim renvoie des lat/lon en string → convertir en number
-      usedLat = f.lat ? parseFloat(f.lat) : 0;
-      usedLon = f.lon ? parseFloat(f.lon) : 0;
-      place = f;
+      // Forward geocode : pour récupérer les coords depuis l'adrese
+      try {
+        const f = await geocodeService.forwardGeocode(address);
+        usedLat = f.lat ? Number(f.lat) : null;
+        usedLon = f.lon ? Number(f.lon) : null;
+        place = f;
+      } catch (err) {
+        console.warn('forwardGeocode failed:', err.message || err);
+      }
     }
 
-    // === Météo ===
-    // Si on a des coords (soit fournies, soit obtenues par forwardGeocode)
-    let weather = { source: 'mock', data: {} };
-    if (usedLat && usedLon) {
-      weather = await weatherService.getWeather(usedLat, usedLon); // { source, data }
-    } else {
-      // fallback : on laisse weather empty
-      weather = { source: 'none', data: {} };
+    // Obtenir la météo actuel du jour (uniquement si les coordonnées sont présentes ceux qui sont très utiles)
+    let weather = null;
+    try {
+      if (usedLat !== null && usedLon !== null && !Number.isNaN(usedLat) && !Number.isNaN(usedLon)) {
+        const w = await weatherService.getWeather(usedLat, usedLon);
+        weather = w && w.data ? w.data : null;
+      }
+    } catch (err) {
+      console.warn('getWeather failed:', err.message || err);
+      weather = null;
     }
-    const weatherData = weather && weather.data ? weather.data : {};
 
-    // === Calcul du MoodScore ===
-    const moodScore = computeMoodScore(rating, weatherData);
+    // Analyser le text par rapport ç la facteur de sentiment écrit
+    const textScore = analyzeText(text);
 
-    // === Construction de l'objet mood ===
+    // Calcul du score d'humeur final avec ventilation
+    const scoreResult = computeScoreWithBreakdown({
+      rating: numericRating,
+      textScore,
+      weather
+    });
+
+    // Construire une entrée d’humeur
     const mood = {
       id: Date.now(),
       text,
-      rating,
+      rating: numericRating,
       lat: usedLat,
       lon: usedLon,
       place,
-      weather: weatherData,
-      weatherSource: weather && weather.source,
-      moodScore,
+      weather,
+      textScore,
+      scoreResult,
+      imageUrl: imageUrl || null,
       createdAt: new Date().toISOString()
     };
 
-    // === Persistance dans data/moods.json ===
-    let moods = [];
-    if (fs.existsSync(moodsFile)) {
-      const raw = fs.readFileSync(moodsFile, 'utf8');
-      moods = JSON.parse(raw || '[]');
-    } else {
-      const dir = path.dirname(moodsFile);
-      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    }
+    // Récupérer les données et l'envoeyr das jsonStore pour le sauvegarder
+    jsonStore.save(mood);
 
-    moods.push(mood);
-    fs.writeFileSync(moodsFile, JSON.stringify(moods, null, 2), 'utf8');
-
-    // === Retour ===
     return res.status(201).json(mood);
   } catch (err) {
     console.error('addMood error:', err && (err.stack || err));
@@ -108,15 +109,12 @@ async function addMood(req, res) {
 }
 
 /**
- * getMoods : retourne tous les moods sauvegardés
+ * getMoods - retourne la liste complète (simple)
+ * On pourrait ajouter pagination / filtering / tri facilement prochainement.
  */
 function getMoods(req, res) {
   try {
-    let moods = [];
-    if (fs.existsSync(moodsFile)) {
-      const raw = fs.readFileSync(moodsFile, 'utf8');
-      moods = JSON.parse(raw || '[]');
-    }
+    const moods = jsonStore.loadAll();
     res.json(moods);
   } catch (err) {
     console.error('getMoods error:', err && (err.stack || err));
