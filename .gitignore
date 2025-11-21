@@ -3,3 +3,6 @@
 
 # env files (can opt-in for committing if needed)
 .env
+
+# Autres .md
+todisoa-doc.md

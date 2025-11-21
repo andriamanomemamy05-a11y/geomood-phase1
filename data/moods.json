@@ -1,0 +1,244 @@
+[
+  {
+    "id": 1763563966485,
+    "text": "Je suis heureux",
+    "rating": 4,
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "place": {
+      "name": "Parc Mock",
+      "type": "park",
+      "lat": 48.8566,
+      "lon": 2.3522
+    },
+    "weather": {
+      "temp": 15,
+      "weather": "Light Rain",
+      "humidity": 82,
+      "wind_speed": 3.5
+    },
+    "weatherSource": "mock",
+    "moodScore": 3,
+    "createdAt": "2025-11-19T14:52:46.485Z"
+  },
+  {
+    "id": 1763564067222,
+    "text": "Je suis triste",
+    "rating": 10,
+    "lat": 43.3569,
+    "lon": 5.3579,
+    "place": {
+      "name": "Parc Mock",
+      "type": "park",
+      "lat": 43.3569,
+      "lon": 5.3579
+    },
+    "weather": {
+      "temp": 15,
+      "weather": "Light Rain",
+      "humidity": 82,
+      "wind_speed": 3.5
+    },
+    "weatherSource": "mock",
+    "moodScore": 9,
+    "createdAt": "2025-11-19T14:54:27.222Z"
+  },
+  {
+    "id": 1763568567980,
+    "text": "Je suis heureuse",
+    "rating": 10,
+    "lat": 43.3569,
+    "lon": 5.3579,
+    "place": {
+      "name": "Parc Mock",
+      "type": "park",
+      "lat": 43.3569,
+      "lon": 5.3579
+    },
+    "weather": {
+      "temp": 15,
+      "weather": "Light Rain",
+      "humidity": 82,
+      "wind_speed": 3.5
+    },
+    "weatherSource": "mock",
+    "moodScore": 9,
+    "createdAt": "2025-11-19T16:09:27.980Z"
+  },
+  {
+    "id": 1763568795367,
+    "text": "Je suis trise",
+    "rating": 9,
+    "lat": 43.3569,
+    "lon": 5.3579,
+    "place": {
+      "name": "Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "car_wash",
+      "lat": 43.3569,
+      "lon": 5.3579
+    },
+    "weather": {
+      "temp": 8.47,
+      "weather": "clear sky",
+      "humidity": 65,
+      "wind_speed": 2.57
+    },
+    "weatherSource": "openweather",
+    "moodScore": 10,
+    "createdAt": "2025-11-19T16:13:15.367Z"
+  },
+  {
+    "id": 1763569310245,
+    "text": "Je suis contente",
+    "rating": 1,
+    "lat": 43.2818,
+    "lon": 5.3808,
+    "place": {
+      "name": "Rue d'Israël, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13008, France",
+      "type": "garden",
+      "lat": 43.2818,
+      "lon": 5.3808
+    },
+    "weather": {
+      "temp": 9.38,
+      "weather": "broken clouds",
+      "humidity": 61,
+      "wind_speed": 4.06
+    },
+    "weatherSource": "openweather",
+    "moodScore": 1,
+    "createdAt": "2025-11-19T16:21:50.245Z"
+  },
+  {
+    "id": 1763569521336,
+    "text": "Je suis en colère",
+    "rating": 5,
+    "lat": 43.36951,
+    "lon": 5.35865,
+    "place": {
+      "name": "École maternelle Saint-Antoine Centre, Avenue de Roquefavour, Les Baumes, Saint-Antoine, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "school",
+      "lat": 43.36951,
+      "lon": 5.35865
+    },
+    "weather": {
+      "temp": 8.14,
+      "weather": "clear sky",
+      "humidity": 64,
+      "wind_speed": 2.57
+    },
+    "weatherSource": "openweather",
+    "moodScore": 6,
+    "createdAt": "2025-11-19T16:25:21.336Z"
+  },
+  {
+    "id": 1763569611133,
+    "text": "Je suis hâte de rentrer à la maison",
+    "rating": 5,
+    "lat": 43.2820455,
+    "lon": 5.3812726,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.2820455,
+      "lon": 5.3812726
+    },
+    "weather": {
+      "temp": 9.38,
+      "weather": "broken clouds",
+      "humidity": 61,
+      "wind_speed": 4.06
+    },
+    "weatherSource": "openweather",
+    "moodScore": 5,
+    "createdAt": "2025-11-19T16:26:51.133Z"
+  },
+  {
+    "id": 1763637446740,
+    "text": "Je suis calme",
+    "rating": 5,
+    "lat": 43.2820455,
+    "lon": 5.3812726,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.2820455,
+      "lon": 5.3812726
+    },
+    "weather": {
+      "temp": 9.42,
+      "weather": "broken clouds",
+      "humidity": 57,
+      "wind_speed": 5.81
+    },
+    "weatherSource": "openweather",
+    "moodScore": 5,
+    "createdAt": "2025-11-20T11:17:26.740Z"
+  },
+  {
+    "id": 1763652480960,
+    "text": "Je suis heurerex moi",
+    "rating": 2,
+    "lat": 43.2820455,
+    "lon": 5.3812726,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.2820455,
+      "lon": 5.3812726
+    },
+    "weather": {
+      "temp": 8.98,
+      "weather": "overcast clouds",
+      "humidity": 52,
+      "wind_speed": 3.13
+    },
+    "weatherSource": "openweather",
+    "moodScore": 2,
+    "createdAt": "2025-11-20T15:28:00.960Z"
+  },
+  {
+    "id": 1763652504323,
+    "text": "Je suis heurerese aussi",
+    "rating": 3,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "tertiary",
+      "lat": "43.3587255",
+      "lon": "5.3576592"
+    },
+    "weather": {
+      "temp": 8.31,
+      "weather": "few clouds",
+      "humidity": 51,
+      "wind_speed": 8.75
+    },
+    "weatherSource": "openweather",
+    "moodScore": 3,
+    "createdAt": "2025-11-20T15:28:24.323Z"
+  },
+  {
+    "id": 1763652570782,
+    "text": "Je suis quoi",
+    "rating": 3,
+    "lat": 43.2820455,
+    "lon": 5.3812726,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.2820455,
+      "lon": 5.3812726
+    },
+    "weather": {
+      "temp": 8.98,
+      "weather": "overcast clouds",
+      "humidity": 52,
+      "wind_speed": 3.13
+    },
+    "weatherSource": "openweather",
+    "moodScore": 3,
+    "createdAt": "2025-11-20T15:29:30.782Z"
+  }
+]
