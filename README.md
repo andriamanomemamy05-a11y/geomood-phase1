@@ -5,16 +5,16 @@ geomood-phase1/
 ├─ .github/
 │ └─ workflows/ci.yml
 ├─ src/
-│ ├─ index.js # serveur Express
-│ ├─ controllers/
+│ ├─ index.js # serveur Express et les routes (POST - GET)
+│ ├─ controllers/ → contient moodController.js qui va gérer les routes Express.
 │ │ └─ moodController.js
-│ ├─ services/
+│ ├─ services/  → contient tous les services pour API et calculs. ✅
 │ │ ├─ weatherService.js
 │ │ ├─ geocodeService.js
 │ │ └─ moodAnalyzer.js
-│ ├─ storage/
+│ ├─ storage/ → pour sauvegarder localement les moods (JSON)
 │ │ └─ jsonStore.js
-│ └─ utils/
+│ └─ utils/ → fonctions utilitaires, comme le calcul du MoodScore. ✅
 │ └─ moodScore.js
 ├─ tests/
 │ └─ moodScore.test.js
