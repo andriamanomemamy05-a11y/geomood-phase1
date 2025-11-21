@@ -1,4 +1,3 @@
-// src/index.js
 require('dotenv').config();
 const express = require('express');
 const { addMood, getMoods } = require('./controllers/moodController');
@@ -6,43 +5,28 @@ const { addMood, getMoods } = require('./controllers/moodController');
 const app = express();
 app.use(express.json());
 
+// Simple logger
 app.use((req, res, next) => {
   console.log(new Date().toISOString(), req.method, req.url);
   next();
 });
 
+// Récupération des api routes
 app.get('/', (req, res) => res.send('API up'));
 app.post('/api/moods', addMood);
 app.get('/api/moods', getMoods);
 
-app.use((req, res) => res.status(404).json({ error: 'Not Found', path: req.originalUrl }));
+// Check de l'erreur 404
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not Found', path: req.originalUrl });
+});
 
+// Erreur handler sur le serveur
 app.use((err, req, res, next) => {
   console.error('Unhandled error:', err && (err.stack || err));
   res.status(500).json({ error: 'Internal Server Error' });
 });
 
+// Déclaration du erveur à lancer
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
-
-
-// require('dotenv').config(); // Pour les clés API si nécessaire
-// const weatherService = require('./services/weatherService');
-// const geocodeService = require('./services/geocodeService');
-
-// async function main() {
-//   const lat = 48.8566;
-//   const lon = 2.3522;
-
-//   console.log('--- Test GeocodeService ---');
-//   const place = await geocodeService.reverseGeocode(lat, lon);
-//   console.log(place);
-
-//   console.log('--- Test WeatherService ---');
-//   const weather = await weatherService.getWeather(lat, lon);
-//   console.log(weather);
-// }
-
-// main();
