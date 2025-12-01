@@ -90,5 +90,833 @@
     "scoreResult": 95,
     "imageUrl": null,
     "createdAt": "2025-11-21T13:47:56.534Z"
+  },
+  {
+    "id": 1764585569071,
+    "text": "Je suis ravie moi",
+    "rating": 4,
+    "lat": 48.85664584326118,
+    "lon": 2.352504372629483,
+    "place": {
+      "name": "Hôtel de Ville, Place de l'Hôtel de Ville, Quartier Saint-Merri, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France",
+      "type": "townhall",
+      "lat": 48.85664584326118,
+      "lon": 2.352504372629483
+    },
+    "weather": {
+      "temp": 6.45,
+      "weather": "clear sky",
+      "humidity": 82,
+      "wind_speed": 6.17
+    },
+    "textScore": 0,
+    "scoreResult": 90,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T10:39:29.071Z"
+  },
+  {
+    "id": 1764585645422,
+    "text": "Je suis malade",
+    "rating": 1,
+    "lat": 48.85765412109265,
+    "lon": 2.361959695881524,
+    "place": {
+      "name": "3, Rue Payenne, Quartier des Archives, Paris 3e Arrondissement, Paris, Île-de-France, France métropolitaine, 75003, France",
+      "type": "house",
+      "lat": 48.85765412109265,
+      "lon": 2.361959695881524
+    },
+    "weather": {
+      "temp": 6.49,
+      "weather": "clear sky",
+      "humidity": 81,
+      "wind_speed": 6.17
+    },
+    "textScore": 0,
+    "scoreResult": 30,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T10:40:45.422Z"
+  },
+  {
+    "id": 1764585797575,
+    "text": "okei contente",
+    "rating": 4,
+    "lat": 48.828363085968135,
+    "lon": 2.1282502413123443,
+    "place": {
+      "name": "165 ter, Rue de Versailles, Le Petit Parc, Le Chesnay, Le Chesnay-Rocquencourt, Versailles, Yvelines, Île-de-France, France métropolitaine, 78150, France",
+      "type": "house",
+      "lat": 48.828363085968135,
+      "lon": 2.1282502413123443
+    },
+    "weather": {
+      "temp": 5.87,
+      "weather": "clear sky",
+      "humidity": 85,
+      "wind_speed": 6.17
+    },
+    "textScore": 0,
+    "scoreResult": 90,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T10:43:17.575Z"
+  },
+  {
+    "id": 1764585928574,
+    "text": "heureuse",
+    "rating": 5,
+    "lat": 43.36049247895427,
+    "lon": 5.357654572580942,
+    "place": {
+      "name": "Boulevard Jean Verjus, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "residential",
+      "lat": 43.36049247895427,
+      "lon": 5.357654572580942
+    },
+    "weather": {
+      "temp": 10.51,
+      "weather": "clear sky",
+      "humidity": 68,
+      "wind_speed": 3.09
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T10:45:28.574Z"
+  },
+  {
+    "id": 1764586712493,
+    "text": "je suis triste aujourd'hui moi ",
+    "rating": 2,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 10.37,
+      "weather": "clear sky",
+      "humidity": 67,
+      "wind_speed": 3.09
+    },
+    "textScore": -1,
+    "scoreResult": 40,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T10:58:32.493Z"
+  },
+  {
+    "id": 1764588081674,
+    "text": "frustrée",
+    "rating": 2,
+    "lat": 43.281886,
+    "lon": 5.3804362,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.281886,
+      "lon": 5.3804362
+    },
+    "weather": {
+      "temp": 11.33,
+      "weather": "clear sky",
+      "humidity": 65,
+      "wind_speed": 1.79
+    },
+    "textScore": 0,
+    "scoreResult": 50,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T11:21:21.674Z"
+  },
+  {
+    "id": 1764589135235,
+    "text": "happy",
+    "rating": 5,
+    "lat": 43.3646456,
+    "lon": 5.3569816,
+    "place": {
+      "name": "Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "tertiary",
+      "lat": 43.3646456,
+      "lon": 5.3569816
+    },
+    "weather": {
+      "temp": 11.07,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 1,
+    "scoreResult": 100,
+    "imageUrl": "data\\selfies\\selfie_1764589135232.png",
+    "createdAt": "2025-12-01T11:38:55.235Z"
+  },
+  {
+    "id": 1764589549955,
+    "text": "cool je suis cool",
+    "rating": 4,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.07,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 2,
+    "scoreResult": 100,
+    "imageUrl": "data\\selfies\\selfie_1764589549952.png",
+    "createdAt": "2025-12-01T11:45:49.955Z"
+  },
+  {
+    "id": 1764589771096,
+    "text": "joyeuse",
+    "rating": 5,
+    "lat": 43.36234299380934,
+    "lon": 5.357576251062711,
+    "place": {
+      "name": "Chicken La Viste, Traverse de l'Hermitage, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "fast_food",
+      "lat": 43.36234299380934,
+      "lon": 5.357576251062711
+    },
+    "weather": {
+      "temp": 11.57,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": "data\\selfies\\selfie_1764589771093.png",
+    "createdAt": "2025-12-01T11:49:31.096Z"
+  },
+  {
+    "id": 1764589780604,
+    "text": "joyeuse",
+    "rating": 5,
+    "lat": 43.36234299380934,
+    "lon": 5.357576251062711,
+    "place": {
+      "name": "Chicken La Viste, Traverse de l'Hermitage, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "fast_food",
+      "lat": 43.36234299380934,
+      "lon": 5.357576251062711
+    },
+    "weather": {
+      "temp": 11.57,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": "data\\selfies\\selfie_1764589780601.png",
+    "createdAt": "2025-12-01T11:49:40.604Z"
+  },
+  {
+    "id": 1764589812487,
+    "text": "joyeuse",
+    "rating": 5,
+    "lat": 43.36234299380934,
+    "lon": 5.357576251062711,
+    "place": {
+      "name": "Chicken La Viste, Traverse de l'Hermitage, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "fast_food",
+      "lat": 43.36234299380934,
+      "lon": 5.357576251062711
+    },
+    "weather": {
+      "temp": 11.57,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": "data\\selfies\\selfie_1764589812485.png",
+    "createdAt": "2025-12-01T11:50:12.487Z"
+  },
+  {
+    "id": 1764589832854,
+    "text": "555",
+    "rating": 5,
+    "lat": 48.860290000983134,
+    "lon": 2.3411865236994345,
+    "place": {
+      "name": "Place du Louvre, Paris 1er Arrondissement, Paris, Île-de-France, France métropolitaine, 75001, France",
+      "type": "bicycle_parking",
+      "lat": 48.860290000983134,
+      "lon": 2.3411865236994345
+    },
+    "weather": {
+      "temp": 6.97,
+      "weather": "clear sky",
+      "humidity": 80,
+      "wind_speed": 6.69
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T11:50:32.854Z"
+  },
+  {
+    "id": 1764590017260,
+    "text": "joyeuse",
+    "rating": 3,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.57,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 0,
+    "scoreResult": 70,
+    "imageUrl": "data\\selfies\\selfie_1764590017247.png",
+    "createdAt": "2025-12-01T11:53:37.260Z"
+  },
+  {
+    "id": 1764590100025,
+    "text": "cool moi",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.57,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.13
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "data\\selfies\\selfie_1764590100021.png",
+    "createdAt": "2025-12-01T11:55:00.025Z"
+  },
+  {
+    "id": 1764590708684,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.54,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 1.54
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764590708680.png",
+    "createdAt": "2025-12-01T12:05:08.684Z"
+  },
+  {
+    "id": 1764592408759,
+    "text": "je suis heureuse mercii",
+    "rating": 5,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": "selfies/selfie_1764592408757.png",
+    "createdAt": "2025-12-01T12:33:28.759Z"
+  },
+  {
+    "id": 1764592600870,
+    "text": "je suis heureuse mercii",
+    "rating": 5,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 100,
+    "imageUrl": "selfies/selfie_1764592600869.png",
+    "createdAt": "2025-12-01T12:36:40.870Z"
+  },
+  {
+    "id": 1764592748411,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764592748409.png",
+    "createdAt": "2025-12-01T12:39:08.411Z"
+  },
+  {
+    "id": 1764592873425,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764592873423.png",
+    "createdAt": "2025-12-01T12:41:13.425Z"
+  },
+  {
+    "id": 1764592894410,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764592894407.png",
+    "createdAt": "2025-12-01T12:41:34.410Z"
+  },
+  {
+    "id": 1764592912674,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764592912671.png",
+    "createdAt": "2025-12-01T12:41:52.674Z"
+  },
+  {
+    "id": 1764592965523,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.28,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764592965521.png",
+    "createdAt": "2025-12-01T12:42:45.523Z"
+  },
+  {
+    "id": 1764593044387,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.91,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T12:44:04.387Z"
+  },
+  {
+    "id": 1764593074638,
+    "text": "cool",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.91,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T12:44:34.638Z"
+  },
+  {
+    "id": 1764593111996,
+    "text": "cool wa ",
+    "rating": 2,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.91,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 60,
+    "imageUrl": null,
+    "createdAt": "2025-12-01T12:45:11.996Z"
+  },
+  {
+    "id": 1764593173034,
+    "text": "cool e",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.91,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 40,
+    "imageUrl": "selfies/selfie_1764593173032.png",
+    "createdAt": "2025-12-01T12:46:13.034Z"
+  },
+  {
+    "id": 1764593280911,
+    "text": "cc",
+    "rating": 2,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 11.91,
+      "weather": "clear sky",
+      "humidity": 62,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 50,
+    "imageUrl": "selfies/selfie_1764593280910.png",
+    "createdAt": "2025-12-01T12:48:00.911Z"
+  },
+  {
+    "id": 1764593405655,
+    "text": "hehe",
+    "rating": 5,
+    "lat": 43.281886,
+    "lon": 5.3804362,
+    "place": {
+      "name": "Rue de Madagascar, Vauban, Marseille 6e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13006, France",
+      "type": "residential",
+      "lat": 43.281886,
+      "lon": 5.3804362
+    },
+    "weather": {
+      "temp": 13.28,
+      "weather": "few clouds",
+      "humidity": 62,
+      "wind_speed": 1.79
+    },
+    "textScore": 0,
+    "scoreResult": 95,
+    "imageUrl": "selfies/selfie_1764593405654.png",
+    "createdAt": "2025-12-01T12:50:05.655Z"
+  },
+  {
+    "id": 1764593579975,
+    "text": "hahaha",
+    "rating": 5,
+    "lat": 48.6233286,
+    "lon": -2.4636955,
+    "place": {
+      "name": "Rue de la Ville Rogon, Caroual-Plage, Erquy, Saint-Brieuc, Côtes-d'Armor, Bretagne, France métropolitaine, 22430, France",
+      "type": "camp_site",
+      "lat": 48.6233286,
+      "lon": -2.4636955
+    },
+    "weather": {
+      "temp": 11.76,
+      "weather": "overcast clouds",
+      "humidity": 92,
+      "wind_speed": 12.32
+    },
+    "textScore": 0,
+    "scoreResult": 95,
+    "imageUrl": "selfies/selfie_1764593579972.png",
+    "createdAt": "2025-12-01T12:52:59.975Z"
+  },
+  {
+    "id": 1764593751154,
+    "text": "cool",
+    "rating": 5,
+    "lat": 43.3284841,
+    "lon": 5.3669315,
+    "place": {
+      "name": "Gèze, Avenue Félix Zoccola, Les Crottes, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "bicycle_rental",
+      "lat": 43.3284841,
+      "lon": 5.3669315
+    },
+    "weather": {
+      "temp": 13.53,
+      "weather": "clear sky",
+      "humidity": 61,
+      "wind_speed": 3.6
+    },
+    "textScore": 1,
+    "scoreResult": 100,
+    "imageUrl": "selfies/selfie_1764593751153.png",
+    "createdAt": "2025-12-01T12:55:51.154Z"
+  },
+  {
+    "id": 1764593887518,
+    "text": "cccc",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.33,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 30,
+    "imageUrl": "selfies/selfie_1764593887515.png",
+    "createdAt": "2025-12-01T12:58:07.518Z"
+  },
+  {
+    "id": 1764593899344,
+    "text": "cccc",
+    "rating": 1,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.33,
+      "weather": "clear sky",
+      "humidity": 63,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 30,
+    "imageUrl": "selfies/selfie_1764593899341.png",
+    "createdAt": "2025-12-01T12:58:19.344Z"
+  },
+  {
+    "id": 1764594217617,
+    "text": "loin",
+    "rating": 2,
+    "lat": -18.9100122,
+    "lon": 47.5255809,
+    "place": {
+      "name": "Escaliers Ranavalona, Ambatovinaky, Ambatomena, Analakely, Antananarivo, Analamanga, Province d’Antananarivo, 101, Madagasikara / Madagascar",
+      "type": "garden",
+      "lat": -18.9100122,
+      "lon": 47.5255809
+    },
+    "weather": {
+      "temp": 19.97,
+      "weather": "broken clouds",
+      "humidity": 94,
+      "wind_speed": 3.09
+    },
+    "textScore": 0,
+    "scoreResult": 35,
+    "imageUrl": "selfies/selfie_1764594217616.png",
+    "createdAt": "2025-12-01T13:03:37.617Z"
+  },
+  {
+    "id": 1764594556585,
+    "text": "marcher stp",
+    "rating": 2,
+    "lat": 43.3587255,
+    "lon": 5.3576592,
+    "place": {
+      "name": "Jardin Val Ombré (du 19 mars 1962), 99, Avenue de la Viste, La Viste, Marseille 15e Arrondissement, Marseille, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13015, France",
+      "type": "garden",
+      "lat": 43.3587255,
+      "lon": 5.3576592
+    },
+    "weather": {
+      "temp": 12.72,
+      "weather": "clear sky",
+      "humidity": 61,
+      "wind_speed": 2.57
+    },
+    "textScore": 0,
+    "scoreResult": 50,
+    "imageUrl": "selfies/selfie_1764594556582.png",
+    "createdAt": "2025-12-01T13:09:16.585Z"
+  },
+  {
+    "id": 1764605038635,
+    "text": "je suis heureuse d'être ici parmi vous",
+    "rating": 4,
+    "lat": 43.51345185537563,
+    "lon": 5.428164481854765,
+    "place": {
+      "name": "Campus Eductive, 684, Avenue du Club Hippique, Pont de l'Arc, Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13090, France",
+      "type": "yes",
+      "lat": 43.51345185537563,
+      "lon": 5.428164481854765
+    },
+    "weather": {
+      "temp": 11.05,
+      "weather": "clear sky",
+      "humidity": 76,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 90,
+    "imageUrl": "selfies/selfie_1764605038633.png",
+    "createdAt": "2025-12-01T16:03:58.635Z"
+  },
+  {
+    "id": 1764605250151,
+    "text": "oke",
+    "rating": 4,
+    "lat": 43.51345185537563,
+    "lon": 5.428164481854765,
+    "place": {
+      "name": "Campus Eductive, 684, Avenue du Club Hippique, Pont de l'Arc, Aix-en-Provence, Bouches-du-Rhône, Provence-Alpes-Côte d'Azur, France métropolitaine, 13090, France",
+      "type": "yes",
+      "lat": 43.51345185537563,
+      "lon": 5.428164481854765
+    },
+    "weather": {
+      "temp": 11.05,
+      "weather": "clear sky",
+      "humidity": 76,
+      "wind_speed": 3.6
+    },
+    "textScore": 0,
+    "scoreResult": 90,
+    "imageUrl": "selfies/selfie_1764605250150.png",
+    "createdAt": "2025-12-01T16:07:30.151Z"
   }
 ]

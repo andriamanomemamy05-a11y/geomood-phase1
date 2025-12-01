@@ -176,3 +176,141 @@ Rappel : Chaque fichier
     👉 Tes fichiers de tests unitaires, très bien organisés :
 
     ➡️ Tes tests garantissent que ton code reste fiable.
+
+
+*********************************************************************************************************
+
+1️⃣ index.js (serveur principal)
+
+    Rôle : Point d’entrée du serveur Node/Express.
+
+    Ce qu’il fait :
+
+        Charge les variables d’environnement (dotenv).
+
+        Configure Express (app.use(express.json())).
+
+        Sert les fichiers statiques du dossier public (index.html, CSS, JS côté client…).
+
+        Définit l’API pour l’autocomplete : /api/search → appelle geocodeService.forwardGeocode.
+
+        Définit les routes principales pour les moods :
+
+            POST /api/moods → appelle addMood dans moodController.
+
+            GET /api/moods → appelle getMoods dans moodController.
+
+        Gère les 404 et les erreurs serveur.
+
+2️⃣ controllers/moodController.js
+
+    Rôle : Logique métier pour la gestion des moods (ajout et récupération).
+
+    Ce qu’il fait :
+
+        addMood(req, res)
+
+            Valide les données du formulaire (text, rating, lat/lon ou address).
+
+            Si seulement address est fourni, utilise geocodeService.forwardGeocode pour obtenir les coordonnées.
+
+            Si lat/lon sont fournis, utilise geocodeService.reverseGeocode pour obtenir l’adresse complète.
+
+            Récupère la météo avec weatherService.getWeather(lat, lon).
+
+            Analyse le texte avec textAnalyzer.analyzeText(text) pour un score de sentiment.
+
+            Calcule le score final avec moodScore.computeScoreWithBreakdown.
+
+            Sauvegarde dans le JSON via jsonStore.save.
+
+            Retourne l’objet mood au frontend.
+
+        getMoods(req, res)
+
+            Lit tous les moods via jsonStore.loadAll() et renvoie au frontend.
+
+3️⃣ services/geocodeService.js
+
+    Rôle : Transformation entre adresse ↔ coordonnées.
+
+    forwardGeocode(address) → adresse → { lat, lon, name }.
+
+    reverseGeocode(lat, lon) → coordonnées → { name, lat, lon }.
+
+    Utilisé par moodController et /api/search (autocomplete).
+
+4️⃣ services/weatherService.js
+
+    Rôle : Récupère la météo via OpenWeatherMap ou mock.
+
+    Appelé uniquement dans addMood pour enrichir l’humeur avec la météo.
+
+5️⃣ storage/jsonStore.js
+
+    Rôle : Sauvegarde et lecture des données JSON (data/moods.json).
+
+    Méthodes :
+
+        save(entry) → ajoute un mood.
+
+        loadAll() → récupère tous les moods.
+
+    Appelé uniquement par moodController.
+
+6️⃣ utils/moodScore.js
+
+    Rôle : Calcule un score final d’humeur.
+
+    Appelé par addMood.
+
+7️⃣ utils/textAnalyzer.js
+
+    Rôle : Analyse le texte de l’utilisateur pour en extraire un score positif/négatif.
+
+    Appelé par addMood.
+
+
+🔄 Flux complet :
+
+Frontend (public/index.html) :
+
+    Formulaire rempli → fetch('/api/moods', POST)
+
+    Autocomplete adresse → fetch('/api/search?q=...')
+
+Serveur (index.js) :
+
+    Reçoit la requête → appelle le controller correspondant.
+
+Controller (moodController.js) :
+
+    Valide les données.
+
+    Appelle services :
+
+        geocodeService pour l’adresse.
+
+        weatherService pour la météo.
+
+        textAnalyzer pour analyser le texte.
+
+    Appelle computeScoreWithBreakdown pour le score.
+
+    Appelle jsonStore.save pour enregistrer le mood.
+
+Backend → Frontend :
+
+    Retourne la réponse JSON pour afficher le mood ou l’autocomplete.
+
+✅ Conclusion :
+
+    Tous tes fichiers sont utiles.
+
+    index.js orchestre tout.
+
+    Les services (geocodeService, weatherService) sont des utilitaires pour le controller.
+
+    Le controller centralise la logique et la sauvegarde.
+
+    ![alt text](image.png)
